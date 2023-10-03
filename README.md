@@ -4,11 +4,7 @@ Simple calculator for the game [InfraSpace](https://store.steampowered.com/app/1
 
 It is a simple HTML file that does not use any external links or resources. Everything is self contained, the HTML, the styling, the data and the calculator logic.
 
-## Downloading the calculator
-
-1. Right click `infraspace_calc.html` file and select `save as`
-2. Save somewhere handy
-3. Open it in your browser (eg. open file)
+Using Github Pages (to be confirmed)
 
 ## Using the calculator is pretty simple
 

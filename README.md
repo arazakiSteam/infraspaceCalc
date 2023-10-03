@@ -4,7 +4,7 @@ Simple calculator for the game [InfraSpace](https://store.steampowered.com/app/1
 
 It is a simple HTML file that does not use any external links or resources. Everything is self contained, the HTML, the styling, the data and the calculator logic.
 
-Using Github Pages (to be confirmed)
+You can access the page using Github Pages [HERE!](https://arazakisteam.github.io/infraspaceCalc/)
 
 ## Using the calculator is pretty simple
 
@@ -99,7 +99,7 @@ json5 buildings.json > buildings2.json
 
 All the buildings are provided in the game data even those that do not produce or consume resources. Additionally, there is a lot more data than required for the calculator.
 
-The required data is extracted, as such, I have provided a simple python script that outputs three javascript objects to be used in `infraspace_calc.html`.
+The required data is extracted, as such, I have provided a simple python script that outputs three javascript objects to be used in `index.html`.
 
 The script assumes you have cleaned the json in the [Preparing the Data](#preparing) creating the `buildings2.json` (I was lazy).
 
@@ -115,4 +115,4 @@ The three js objects are:
 - resourceBuildingMap - a map of resources to its production building
 - data - map of building data
 
-Within [infraspace_calc.html](infraspace_calc.html) replace the above objects with the output from the `extractBuildingData.py` script.
+Within [index.html](infraspace_calc.html) replace the above objects with the output from the `extractBuildingData.py` script.

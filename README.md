@@ -119,4 +119,4 @@ The three js objects are:
 - resourceBuildingMap - a map of resources to its production building
 - data - map of building data
 
-Within [infraspace_calc.html](infraspace_calc.html) replace the above objects with the output from the
+Within [infraspace_calc.html](infraspace_calc.html) replace the above objects with the output from the `extractBuildingData.py` script.

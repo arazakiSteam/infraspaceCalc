@@ -188,11 +188,28 @@
 
       document.getElementsByName("mode").forEach(e => e.addEventListener("change", toggleMode));
 
+      document.getElementById("rate_amount").addEventListener("keypress", event => handleKeyPress(event));
+      document.getElementById("building_amount").addEventListener("keypress", event => handleKeyPress(event));
+
       document.getElementById("calc_rate").addEventListener("click", calculateResourceRate);
-      document.getElementById("calc_building").addEventListener("click", calculateBuildingRequirements)
+      document.getElementById("calc_building").addEventListener("click", calculateBuildingRequirements);
+
+      document.getElementById("rate_amount").focus();
     });
 
     let time_frame = [1, 60];
+
+    function handleKeyPress(event) {
+      if (event.key === "Enter") {
+        var modes = document.getElementsByName("mode")
+
+        if (modes[0].checked) {
+          document.getElementById("calc_rate").click();
+        } else {
+          document.getElementById("calc_building").click();
+        }
+      }
+    }
 
     function toggleMode() {
       var modes = document.getElementsByName("mode")
@@ -203,9 +220,11 @@
       if (modes[0].checked) {
         rateTable.style.display = "inline";
         productionTable.style.display = "none";
+        document.getElementById("rate_amount").focus();
       } else {
         productionTable.style.display = "inline";
         rateTable.style.display = "none";
+        document.getElementById("building_amount").focus();
       }
     }
 
